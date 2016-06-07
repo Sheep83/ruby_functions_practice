@@ -38,7 +38,7 @@ def add_string_as_number(string1, string2)
 end
 
 def number_to_full_month_name(num)
-    month = case num
+    case num
     when 1 
         return "January"
       when 2
@@ -63,11 +63,11 @@ def number_to_full_month_name(num)
         return "November"
       when 12
         return "December"  
-      end
+    end
 end
 
 def number_to_short_month_name(num)
-    month = case num
+  case num
   when 1 
     return "Jan"
   when 2
@@ -100,8 +100,11 @@ def volume_of_cube(dim)
 end
 
 def volume_of_sphere(radius)
-volume =  (4.0 / 3.0) * Math::PI * (radius ** 3)
-return volume.round(2)
+  volume =  (4.0 / 3.0) * Math::PI * (radius ** 3)
+  return volume.round(2)
 end
 
+def python_pilate(string)
+  return string.gsub(/[r]/, 'w')
+end
 

@@ -77,4 +77,9 @@ class Functions_Practice < MiniTest::Test
     assert_equal( 33.51, volume)
   end
 
+  def test_python_pilate
+    pilate = python_pilate("I shall release Brian!")
+    assert_equal("I shall welease Bwian!", pilate)
+  end
+
 end
