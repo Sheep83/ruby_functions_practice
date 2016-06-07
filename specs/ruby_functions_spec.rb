@@ -36,9 +36,7 @@ class Functions_Practice < MiniTest::Test
   end
 
   def test_join_string()
-    string_1 = "Mary had a little lamb, "
-    string_2 = "it's fleece was white as snow"
-    joined_string = join_string( string_1, string_2 )
+    joined_string = join_string( "Mary had a little lamb, ", "it's fleece was white as snow" )
     assert_equal( "Mary had a little lamb, it's fleece was white as snow", joined_string )
   end
 
@@ -69,20 +67,14 @@ class Functions_Practice < MiniTest::Test
 
   # #Given the length of a side of a cube calculate the volume 
   def test_volume_of_cube()
-  volume = volume_of_cube(2)
-  assert_equal( 8, volume)
+    volume = volume_of_cube(2)
+    assert_equal( 8, volume)
   end
-
-
-  # end
 
   # #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
     volume = volume_of_sphere(2)
+    assert_equal( 33.51, volume)
   end
-
-
-  # end
-
 
 end
