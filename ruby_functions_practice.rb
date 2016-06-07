@@ -24,3 +24,10 @@ def length_of_string(string)
   string = string.length
   return string
 end
+
+def join_string(string1, string2)
+  string1 = "Mary had a little lamb, "
+  string2 = "it's fleece was white as snow"
+  return string1 + string2
+end
+
